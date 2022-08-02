@@ -28,21 +28,23 @@ Screen1 As screen:
             =ClearCollect(fColl1, OmdbApi.Search(TextInput1.Text, "1").Search);
             ClearCollect(fColl2, CrownMoviesApi.Get());
             
-            AddColumns(fColl1,
-                "id", Blank(),
-                "owner", Blank()
-            );
+            ClearCollect(collMod1, AddColumns(fColl1,
+                "id", "",
+                "owner", ""
+            ));
             
-            AddColumns(fColl2,
+            ClearCollect(collMod2, AddColumns(fColl2,
                 "Type",Blank()
-            );
+            ));
             
-            ForAll(fColl2, 
-            Patch(fColl1, Defaults(fColl1), 
+            ForAll(collMod2, 
+            Patch(collMod1, Defaults(collMod1), 
             { 
                 Title:ThisRecord.Title, 
                 Year:ThisRecord.Year, 
-                Poster:ThisRecord.Poster
+                Poster:ThisRecord.Poster,
+                id: ThisRecord._id,
+                owner: ThisRecord._owner
             }));
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
@@ -53,12 +55,12 @@ Screen1 As screen:
         Tooltip: ="Search"
         Width: =280
         X: =180
-        Y: =311
+        Y: =321
         ZIndex: =2
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =612
-        Items: =fColl1
+        Items: =collMod1
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
