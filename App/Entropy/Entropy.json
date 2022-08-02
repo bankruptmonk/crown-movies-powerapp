@@ -23,7 +23,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/02/2022 17:49:08",
+  "HeaderLastSavedDateTimeUTC": "08/02/2022 18:05:58",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "8aa2029c-6084-490a-a285-8f6ff3c3f058": "\"/providers/microsoft.powerapps/apis/shared_omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77/connections/aafd694e874d453e921949f9f44b823d\"",
@@ -74,7 +74,7 @@
     "Rectangle1_2": 14,
     "Screen1": 0,
     "Separator1": 13,
-    "Subtitle1": 12,
+    "Subtitle1": 11,
     "Subtitle1_1": 12,
     "TextInput1": 5,
     "Title1": 10

@@ -27,8 +27,23 @@ Screen1 As screen:
         OnSelect: |-
             =ClearCollect(fColl1, OmdbApi.Search(TextInput1.Text, "1").Search);
             ClearCollect(fColl2, CrownMoviesApi.Get());
+            
+            AddColumns(fColl1,
+                "id", Blank(),
+                "owner", Blank()
+            );
+            
+            AddColumns(fColl2,
+                "Type",Blank()
+            );
+            
             ForAll(fColl2, 
-            Patch(fColl1, Defaults(fColl1), { Title:ThisRecord.Title, Year:ThisRecord.Year, Poster:ThisRecord.Poster }));
+            Patch(fColl1, Defaults(fColl1), 
+            { 
+                Title:ThisRecord.Title, 
+                Year:ThisRecord.Year, 
+                Poster:ThisRecord.Poster
+            }));
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
