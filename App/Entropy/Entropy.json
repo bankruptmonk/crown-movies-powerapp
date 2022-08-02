@@ -17,16 +17,17 @@
     "Screen1": 3,
     "Separator1": 17,
     "Subtitle1": 16,
-    "Subtitle1_1": 21,
+    "Subtitle1_1": 15,
     "TextInput1": 9,
     "Title1": 14
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/02/2022 12:41:27",
+  "HeaderLastSavedDateTimeUTC": "08/02/2022 17:48:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "8aa2029c-6084-490a-a285-8f6ff3c3f058": "\"/providers/microsoft.powerapps/apis/shared_omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77/connections/aafd694e874d453e921949f9f44b823d\""
+    "8aa2029c-6084-490a-a285-8f6ff3c3f058": "\"/providers/microsoft.powerapps/apis/shared_omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77/connections/aafd694e874d453e921949f9f44b823d\"",
+    "a9408bd5-eae9-4c92-bc5b-ac4ee148fe90": "\"/providers/microsoft.powerapps/apis/shared_crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77/connections/bfa81276270945ceaa66408d44161761\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -34,13 +35,14 @@
     "footer-default-supergraphic-logo": "49ac2ccb-f39f-4c34-918b-537c198e6da4.svg"
   },
   "LocalResourceRootPaths": {
-    "crown": "https://docserverpwaprodeus.blob.core.windows.net/492f7726-549a-4658-8f9d-4b0fa334336b-1/resource/Assets0Images0c5249f69-7556-4e49-924b-2be7744af8ff.svg?sv=2017-04-17&sr=b&sig=119vNA5Jrm%2Bs3wxpbI1%2B%2FmHj6ga4WBYQHf8IjC8dasc%3D&spr=https&se=2022-08-03T12%3A41%3A12Z&sp=r",
-    "footer-default-supergraphic-logo": "https://docserverpwaprodeus.blob.core.windows.net/492f7726-549a-4658-8f9d-4b0fa334336b-1/resource/Assets0Images049ac2ccb-f39f-4c34-918b-537c198e6da4.svg?sv=2017-04-17&sr=b&sig=1cnaYEMmLR6g%2B5w6gREn2ERrN%2BmEYUkmnu4a7a6eiZ0%3D&spr=https&se=2022-08-03T12%3A41%3A12Z&sp=r"
+    "crown": "https://docserverpwaprodeus.blob.core.windows.net/f703ffe9-e651-4af1-a630-c829532286ca-1/resource/Assets0Images0c5249f69-7556-4e49-924b-2be7744af8ff.svg?sv=2017-04-17&sr=b&sig=66d68vWs6X7ibhSs7CLJvBWkPSfGsb0gJQLbBuaT9eg%3D&spr=https&se=2022-08-03T18%3A02%3A40Z&sp=r",
+    "footer-default-supergraphic-logo": "https://docserverpwaprodeus.blob.core.windows.net/f703ffe9-e651-4af1-a630-c829532286ca-1/resource/Assets0Images049ac2ccb-f39f-4c34-918b-537c198e6da4.svg?sv=2017-04-17&sr=b&sig=dg3prH04YkhwXRbTgEM%2FlaSSWHC7ILm%2FiXQKe5SjMYw%3D&spr=https&se=2022-08-03T18%3A02%3A40Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "CustomGallerySample": 1,
+    "CrownMoviesApi": 1,
+    "CustomGallerySample": 2,
     "OmdbApi": 0
   },
   "OrderGroupControls": {},
@@ -83,19 +85,18 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1859514,
+    "AnalysisLoadTime": 0.1665731,
     "ControlCount": {
       "button": 1,
       "gallery": 1,
       "galleryTemplate": 1,
-      "icon": 1,
       "image": 3,
       "label": 6,
       "rectangle": 4,
       "screen": 1,
       "text": 1
     },
-    "DeserializationLoadTime": 1.873818,
+    "DeserializationLoadTime": 0.8229087,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

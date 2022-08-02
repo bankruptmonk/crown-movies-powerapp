@@ -19,5 +19,22 @@
     "dependencies": {},
     "dependents": [],
     "id": "8aa2029c-6084-490a-a285-8f6ff3c3f058"
+  },
+  "a9408bd5-eae9-4c92-bc5b-ac4ee148fe90": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "CrownMoviesApi",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77"
+    },
+    "datasets": {},
+    "dataSources": [
+      "CrownMoviesApi"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a9408bd5-eae9-4c92-bc5b-ac4ee148fe90"
   }
 }

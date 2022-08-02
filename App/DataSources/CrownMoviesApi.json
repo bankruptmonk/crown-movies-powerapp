@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77",
+    "Name": "CrownMoviesApi",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

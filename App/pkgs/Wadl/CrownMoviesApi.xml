@@ -1,0 +1,40 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="CrownMoviesApi" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="CrownMoviesApi"></doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="Get_responses_default_def_items_def__id_def" />
+      <string name="Get_responses_default_def_items_def_Title_def" />
+      <string name="Get_responses_default_def_items_def_Year_def" />
+      <string name="Get_responses_default_def_items_def_Poster_def" />
+      <string name="Get_responses_default_def_items_def__owner_def" />
+      <object name="Get_responses_default_def_items_def">
+        <property name="_id" type="string" />
+        <property name="Title" type="string" />
+        <property name="Year" type="string" />
+        <property name="Poster" type="string" />
+        <property name="_owner" type="string" />
+      </object>
+      <array typeRef="Get_responses_default_def_items_def" name="Get_responses_default_def" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77">
+    <resource path="/{connectionId}/item">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="Get" actionName="Get" siena:isDeprecated="false">
+        <doc title="Get&#xA;Get Items" />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:Get_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
