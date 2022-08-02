@@ -1,0 +1,50 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="OmdbApi" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="OmdbApi"></doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="Search_responses_default_def_Search_def_items_def_Title_def" />
+      <string name="Search_responses_default_def_Search_def_items_def_Year_def" />
+      <string name="Search_responses_default_def_Search_def_items_def_imdbID_def" />
+      <string name="Search_responses_default_def_Search_def_items_def_Type_def" />
+      <string name="Search_responses_default_def_Search_def_items_def_Poster_def" />
+      <object name="Search_responses_default_def_Search_def_items_def">
+        <property name="Title" type="string" />
+        <property name="Year" type="string" />
+        <property name="imdbID" type="string" />
+        <property name="Type" type="string" />
+        <property name="Poster" type="string" />
+      </object>
+      <array typeRef="Search_responses_default_def_Search_def_items_def" name="Search_responses_default_def_Search_def" />
+      <string name="Search_responses_default_def_totalResults_def" />
+      <string name="Search_responses_default_def_Response_def" />
+      <object name="Search_responses_default_def">
+        <property name="Search" typeRef="Search_responses_default_def_Search_def" />
+        <property name="totalResults" type="string" />
+        <property name="Response" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77">
+    <resource path="/{connectionId}/">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="Search" actionName="Search" siena:isDeprecated="false">
+        <doc title="Search&#xA;Searches omdbapi" />
+        <request>
+          <param style="query" name="s" type="xs:string" required="true" default="marvel" />
+          <param style="query" name="page" type="xs:long" required="true" default="1" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Search_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
