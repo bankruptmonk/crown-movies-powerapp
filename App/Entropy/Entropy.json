@@ -11,19 +11,19 @@
     "Label1": 5,
     "Label1_1": 8,
     "Label2": 20,
-    "NextArrow1": 15,
     "Rectangle1": 4,
     "Rectangle1_1": 7,
     "Rectangle1_2": 18,
     "Screen1": 3,
     "Separator1": 17,
     "Subtitle1": 16,
+    "Subtitle1_1": 21,
     "TextInput1": 9,
     "Title1": 14
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/02/2022 12:35:16",
+  "HeaderLastSavedDateTimeUTC": "08/02/2022 12:41:27",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "8aa2029c-6084-490a-a285-8f6ff3c3f058": "\"/providers/microsoft.powerapps/apis/shared_omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77/connections/aafd694e874d453e921949f9f44b823d\""
@@ -49,7 +49,6 @@
   "OrderXMLTemplate": {
     "button": 4,
     "gallery": 5,
-    "icon": 6,
     "image": 2,
     "label": 1,
     "rectangle": 0,
@@ -66,13 +65,13 @@
     "Label1": 1,
     "Label1_1": 4,
     "Label2": 16,
-    "NextArrow1": 11,
     "Rectangle1": 0,
     "Rectangle1_1": 3,
     "Rectangle1_2": 14,
     "Screen1": 0,
     "Separator1": 13,
     "Subtitle1": 12,
+    "Subtitle1_1": 12,
     "TextInput1": 5,
     "Title1": 10
   },
@@ -91,7 +90,7 @@
       "galleryTemplate": 1,
       "icon": 1,
       "image": 3,
-      "label": 5,
+      "label": 6,
       "rectangle": 4,
       "screen": 1,
       "text": 1
