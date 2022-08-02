@@ -204,12 +204,3 @@ Screen1 As screen:
         Y: =1047
         ZIndex: =12
 
-    Label4 As label:
-        Height: =70
-        Size: =21
-        Text: ="Text"
-        Width: =100
-        X: =40
-        Y: =321
-        ZIndex: =13
-
