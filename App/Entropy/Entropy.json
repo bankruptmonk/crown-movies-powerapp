@@ -23,7 +23,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/02/2022 17:48:13",
+  "HeaderLastSavedDateTimeUTC": "08/02/2022 17:48:40",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "8aa2029c-6084-490a-a285-8f6ff3c3f058": "\"/providers/microsoft.powerapps/apis/shared_omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77/connections/aafd694e874d453e921949f9f44b823d\"",
@@ -43,6 +43,8 @@
   "OrderDataSource": {
     "CrownMoviesApi": 1,
     "CustomGallerySample": 2,
+    "fColl1": 3,
+    "fColl2": 4,
     "OmdbApi": 0
   },
   "OrderGroupControls": {},
@@ -97,7 +99,7 @@
       "text": 1
     },
     "DeserializationLoadTime": 0.8229087,
-    "ErrorCount": 0
+    "ErrorCount": 10
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

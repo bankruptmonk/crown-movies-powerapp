@@ -25,7 +25,10 @@ Screen1 As screen:
         Fill: =RGBA(0, 102, 204, 1)
         Height: =70
         OnSelect: |-
-            =UpdateContext({results: OmdbApi.Search(TextInput1.Text, "1")})
+            =ClearCollect(fColl1, OmdbApi.Search(TextInput1.Text, "1").Search);
+            ClearCollect(fColl2, CrownMoviesApi.Get());
+            ForAll(fColl2, 
+            Patch(fColl1, Defaults(fColl1), { Title:ThisRecord.Title, Year:ThisRecord.Year, Poster:ThisRecord.Poster }));
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
