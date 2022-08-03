@@ -1,4 +1,4 @@
-Screen1 As screen:
+Home As screen:
     OnVisible: =Select(Button1)
 
     TextInput1 As text:
@@ -59,7 +59,7 @@ Screen1 As screen:
         ZIndex: =2
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Height: =612
+        Height: =601
         Items: =collMod1
         Layout: =Layout.Vertical
         OnSelect: =
@@ -78,7 +78,6 @@ Screen1 As screen:
             ZIndex: =1
 
         Title1 As label:
-            Height: =74
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -102,7 +101,7 @@ Screen1 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =190
             X: =Title1.X
-            Y: =90
+            Y: =69
             ZIndex: =3
 
         Separator1 As rectangle:
@@ -125,17 +124,21 @@ Screen1 As screen:
             Y: =119
             ZIndex: =6
 
-        Button2 As button:
-            Fill: =RGBA(0, 102, 204, 1)
-            Height: =54
-            OnSelect: =
-            Size: =24
-            Text: ="X"
-            Tooltip: ="Delete this entry"
-            Visible: =ThisItem.owner = true
-            Width: =69
-            X: =526
-            Y: =81
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: |-
+                =Select(Parent); Navigate(Details, Fade, {selectedItem: Gallery1.Selected})
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =555
+            Y: =60
             ZIndex: =7
 
     Rectangle1 As rectangle:
