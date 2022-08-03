@@ -110,7 +110,9 @@ Details As screen:
     Button1_1 As button:
         Fill: =RGBA(0, 102, 204, 1)
         Height: =70
-        OnSelect: =
+        OnSelect: |-
+            =CrownMoviesApi.Delete(selectedItem.id, {user:User().Email});
+            Navigate(Home, Fade)
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4

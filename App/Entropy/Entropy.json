@@ -2,47 +2,47 @@
   "ComponentIndexes": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Button1": 10,
-    "Button1_1": 32,
-    "Details": 22,
-    "Gallery1": 11,
-    "galleryTemplate1": 12,
-    "Home": 3,
-    "Icon1": 28,
-    "Image1": 13,
-    "Image2": 6,
-    "Image2_1": 25,
-    "Image3": 20,
-    "Image3_1": 34,
-    "Image7": 31,
-    "Label1": 5,
-    "Label1_1": 8,
-    "Label1_2": 24,
-    "Label1_3": 27,
-    "Label2": 21,
-    "Label2_1": 35,
-    "Label4": 29,
-    "Label5": 30,
-    "NextArrow1": 15,
-    "Rectangle1": 4,
-    "Rectangle1_1": 7,
-    "Rectangle1_2": 19,
-    "Rectangle1_3": 23,
-    "Rectangle1_4": 26,
-    "Rectangle1_5": 33,
-    "Separator1": 18,
-    "Subtitle1": 16,
-    "Subtitle1_1": 17,
-    "TextInput1": 9,
-    "Title1": 14
+    "Button1": 24,
+    "Button1_1": 13,
+    "Details": 3,
+    "Gallery1": 25,
+    "galleryTemplate1": 26,
+    "Home": 17,
+    "Icon1": 9,
+    "Image1": 27,
+    "Image2": 20,
+    "Image2_1": 6,
+    "Image3": 34,
+    "Image3_1": 15,
+    "Image7": 12,
+    "Label1": 19,
+    "Label1_1": 22,
+    "Label1_2": 5,
+    "Label1_3": 8,
+    "Label2": 35,
+    "Label2_1": 16,
+    "Label4": 10,
+    "Label5": 11,
+    "NextArrow1": 29,
+    "Rectangle1": 18,
+    "Rectangle1_1": 21,
+    "Rectangle1_2": 33,
+    "Rectangle1_3": 4,
+    "Rectangle1_4": 7,
+    "Rectangle1_5": 14,
+    "Separator1": 32,
+    "Subtitle1": 30,
+    "Subtitle1_1": 31,
+    "TextInput1": 23,
+    "Title1": 28
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/03/2022 18:44:01",
+  "HeaderLastSavedDateTimeUTC": "08/03/2022 18:54:21",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "8aa2029c-6084-490a-a285-8f6ff3c3f058": "\"/providers/microsoft.powerapps/apis/shared_omdbapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77/connections/aafd694e874d453e921949f9f44b823d\"",
-    "a9408bd5-eae9-4c92-bc5b-ac4ee148fe90": "\"/providers/microsoft.powerapps/apis/shared_crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77/connections/bfa81276270945ceaa66408d44161761\""
+    "a9017ab4-42c5-4972-a797-118ab7c71991": "\"/providers/microsoft.powerapps/apis/shared_crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77/connections/bfa81276270945ceaa66408d44161761\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -50,8 +50,8 @@
     "footer-default-supergraphic-logo": "49ac2ccb-f39f-4c34-918b-537c198e6da4.svg"
   },
   "LocalResourceRootPaths": {
-    "crown": "https://docserverpwaprodeus.blob.core.windows.net/3e3e6ba0-e998-4423-8532-71371f0cd9fa-1/resource/Assets0Images0c5249f69-7556-4e49-924b-2be7744af8ff.svg?sv=2017-04-17&sr=b&sig=RaEnGsYz4uNRt9guDBGPxOxByQqw6RqeuvhWfgNfPlQ%3D&spr=https&se=2022-08-04T18%3A50%3A43Z&sp=r",
-    "footer-default-supergraphic-logo": "https://docserverpwaprodeus.blob.core.windows.net/3e3e6ba0-e998-4423-8532-71371f0cd9fa-1/resource/Assets0Images049ac2ccb-f39f-4c34-918b-537c198e6da4.svg?sv=2017-04-17&sr=b&sig=BJjKtnfHQ7tZJrGKyX%2BPJGyH1%2FCUtrzpyiUgHZSHwN0%3D&spr=https&se=2022-08-04T18%3A50%3A43Z&sp=r"
+    "crown": "https://docserverpwaprodeus.blob.core.windows.net/77404d97-1d25-46a7-93e7-7959137acaa9-1/resource/Assets0Images0c5249f69-7556-4e49-924b-2be7744af8ff.svg?sv=2017-04-17&sr=b&sig=F14IiHjPicZYxkRAs6IeAyiD3OTEZqC7IVOeCpZAXM8%3D&spr=https&se=2022-08-04T18%3A59%3A28Z&sp=r",
+    "footer-default-supergraphic-logo": "https://docserverpwaprodeus.blob.core.windows.net/77404d97-1d25-46a7-93e7-7959137acaa9-1/resource/Assets0Images049ac2ccb-f39f-4c34-918b-537c198e6da4.svg?sv=2017-04-17&sr=b&sig=i%2FsLl4yxtMHCn4wBiF%2F3hFDyCr7OqKE4aQfKTiqykQ8%3D&spr=https&se=2022-08-04T18%3A59%3A28Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -69,12 +69,12 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 4,
-    "gallery": 5,
-    "icon": 6,
+    "gallery": 6,
+    "icon": 3,
     "image": 2,
     "label": 1,
     "rectangle": 0,
-    "text": 3
+    "text": 5
   },
   "PublishOrderIndices": {
     "App": 0,
@@ -120,7 +120,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.2498921,
+    "AnalysisLoadTime": 0.2946539,
     "ControlCount": {
       "button": 2,
       "gallery": 1,
@@ -132,7 +132,7 @@
       "screen": 2,
       "text": 1
     },
-    "DeserializationLoadTime": 2.1462263,
+    "DeserializationLoadTime": 1.9141311,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

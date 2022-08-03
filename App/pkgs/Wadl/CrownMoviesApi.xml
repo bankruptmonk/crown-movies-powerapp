@@ -15,6 +15,10 @@
         <property name="_owner" type="string" />
       </object>
       <array typeRef="Get_responses_default_def_items_def" name="Get_responses_default_def" />
+      <string name="Delete_responses_default_def_message_def" />
+      <object name="Delete_responses_default_def">
+        <property name="message" type="string" />
+      </object>
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/crownmoviesapi-5fa1e8c79474e1906b-5f0a6ccfe6044bcd77">
@@ -25,6 +29,19 @@
         <request />
         <response>
           <representation mediaType="application/json" element="service:Get_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/item/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="DELETE" id="Delete" actionName="Delete" siena:isDeprecated="false">
+        <doc title="Delete&#xA;Delete an Item" />
+        <request>
+          <param style="header" name="user" type="xs:string" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Delete_responses_default_def" />
         </response>
       </method>
     </resource>
