@@ -88,3 +88,110 @@ Add As screen:
         Y: =220
         ZIndex: =10
 
+    Label3 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Title (required)"
+        Width: =560
+        X: =29
+        Y: =307
+        ZIndex: =11
+
+    txtTitle As text:
+        BorderColor: =RGBA(26, 26, 26, 1)
+        Default: =""
+        FocusedBorderColor: =RGBA(0, 154, 219, 1)    
+        Height: =70
+        HoverBorderColor: =RGBA(26, 26, 26, 1) 
+        HoverFill: =RGBA(0, 0, 0, 0)
+        OnChange: =    
+        PressedBorderColor: =RGBA(0, 154, 219, 1)
+        PressedColor: =RGBA(0, 0, 0, 1)
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Size: =21
+        Width: =560
+        X: =42
+        Y: =377
+        ZIndex: =12
+
+    Label3_1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Year (required)"
+        Width: =560
+        X: =29
+        Y: =467
+        ZIndex: =13
+
+    txtYear As text:
+        BorderColor: =RGBA(26, 26, 26, 1)
+        Default: =""
+        FocusedBorderColor: =RGBA(0, 154, 219, 1)    
+        Height: =70
+        HoverBorderColor: =RGBA(26, 26, 26, 1) 
+        HoverFill: =RGBA(0, 0, 0, 0)
+        OnChange: =    
+        PressedBorderColor: =RGBA(0, 154, 219, 1)
+        PressedColor: =RGBA(0, 0, 0, 1)
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Size: =21
+        Width: =560
+        X: =42
+        Y: =535
+        ZIndex: =14
+
+    Label3_2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Poster URL (required)"
+        Width: =560
+        X: =29
+        Y: =633
+        ZIndex: =15
+
+    txtPoster As text:
+        BorderColor: =RGBA(26, 26, 26, 1)
+        Default: =""
+        FocusedBorderColor: =RGBA(0, 154, 219, 1)    
+        Height: =70
+        HoverBorderColor: =RGBA(26, 26, 26, 1) 
+        HoverFill: =RGBA(0, 0, 0, 0)
+        OnChange: =    
+        PressedBorderColor: =RGBA(0, 154, 219, 1)
+        PressedColor: =RGBA(0, 0, 0, 1)
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Size: =21
+        Width: =560
+        X: =42
+        Y: =703
+        ZIndex: =16
+
+    Button1_2 As button:
+        Fill: =RGBA(0, 102, 204, 1)
+        Height: =70
+        OnSelect: |-
+            =CrownMoviesApi.Add({Poster:txtPoster.Text, Title:txtTitle.Text, Year:txtYear.Text, user:User().Email}); Navigate(Home, Fade)
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Size: =24
+        Text: ="Add Movie"
+        Tooltip: ="Search"
+        Width: =280
+        X: =169
+        Y: =823
+        ZIndex: =17
+

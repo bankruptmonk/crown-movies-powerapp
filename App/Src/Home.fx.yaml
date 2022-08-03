@@ -59,6 +59,7 @@ Home As screen:
         ZIndex: =2
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Default: =First(collMod1)
         Height: =601
         Items: =collMod1
         Layout: =Layout.Vertical
