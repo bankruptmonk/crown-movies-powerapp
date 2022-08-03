@@ -15,6 +15,26 @@
         <property name="_owner" type="string" />
       </object>
       <array typeRef="Get_responses_default_def_items_def" name="Get_responses_default_def" />
+      <string name="Add_param_body_def_Poster_def" />
+      <string name="Add_param_body_def_Title_def" />
+      <string name="Add_param_body_def_Year_def" />
+      <object name="Add_param_body_def">
+        <property name="Poster" type="string" />
+        <property name="Title" type="string" />
+        <property name="Year" type="string" />
+      </object>
+      <string name="Add_responses_default_def__id_def" />
+      <string name="Add_responses_default_def_Title_def" />
+      <string name="Add_responses_default_def_Year_def" />
+      <string name="Add_responses_default_def_Poster_def" />
+      <string name="Add_responses_default_def__owner_def" />
+      <object name="Add_responses_default_def">
+        <property name="_id" type="string" />
+        <property name="Title" type="string" />
+        <property name="Year" type="string" />
+        <property name="Poster" type="string" />
+        <property name="_owner" type="string" />
+      </object>
       <string name="Delete_responses_default_def_message_def" />
       <object name="Delete_responses_default_def">
         <property name="message" type="string" />
@@ -29,6 +49,23 @@
         <request />
         <response>
           <representation mediaType="application/json" element="service:Get_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/item">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Add" actionName="Add" siena:isDeprecated="false">
+        <doc title="Add&#xA;Add an item" />
+        <request>
+          <param style="header" name="user" type="xs:string" />
+          <representation mediaType="application/json">
+            <param style="plain" name="Poster" path="/Poster" type="xs:string" />
+            <param style="plain" name="Title" path="/Title" type="xs:string" />
+            <param style="plain" name="Year" path="/Year" type="xs:string" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Add_responses_default_def" />
         </response>
       </method>
     </resource>
